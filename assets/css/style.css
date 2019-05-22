@@ -1,0 +1,236 @@
+@import url('/studio/assets/fonts/Londrina_Shadow/LondrinaShadow-Regular.ttf');
+@import url('/studio/assets/fonts/Gruppo/Gruppo-Regular.ttf');
+
+header {
+	color: #000;
+}
+body{
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+	margin-bottom: 10%;
+}
+h6 {
+	font-size: 25px;
+	color: gray;
+	margin-top: 3%;
+}
+.menu {
+	padding-top: 2%;
+}
+
+ul {
+	align-items: right;
+	list-style-type: none;
+	justify-content: center;
+	text-align: center;
+}
+
+li {
+	margin:3%;
+	border-radius: 5px;
+	font-size: 25px;
+	transition: 2s;
+}
+
+
+.menu ul {
+	background-color: none;
+}
+.menu li {
+	display: inline;
+}
+
+.menu li:hover{
+	display: inline;
+	background-color: lightblue;
+	color: black;
+}
+
+.menu a {
+	font-size: 20px;
+	border-width:1px;
+
+}
+
+.logo {
+	text-align: center;
+	float: left;
+	padding-top: 2%;
+	padding-bottom: 3%;
+}
+
+.banner {
+
+	background-image: url("/studio/assets/img/bg.jpg");
+	object-fit: cover;
+	opacity: 50%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.banner p {
+    font-family: 'Gruppo', sans-serif;
+
+
+	color: #fff;
+	font-size: 70px;
+	padding-top: 10%;
+	padding-bottom: 30%;
+	text-align: center;
+	justify-content: center;
+	text-decoration-style: dashed;
+	animation-name: anime;
+	animation-fill-mode: forwards;
+	animation-duration: 2s;
+
+}
+
+@keyframes anime{
+	from{font-size: 20px}
+	to{font-size: 70px}
+}
+
+.service {
+	margin-top: 10%;
+	text-align: center;
+	justify-content: center;
+	border-width: 30px;
+	border-radius: 10px;
+	animation-name: fader;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	transition-duration: 1s;
+
+}
+
+.service:hover{
+	transform: scaleX(1.3);
+	transform: scaleY(1.1);
+	background-color: red;
+	color: white;
+}
+@keyframes fader{
+	from:{margin-right:-300px}
+	to:{margin-right: 0px}
+}
+
+.services h2 {
+	font-size: 100px;
+	padding-top: 10%;
+	text-align: center;
+	justify-content: center;
+}
+.service img {
+	padding-top: 10%;
+	height: auto;
+	width: 200px;
+
+}
+
+
+
+.clients {
+	background-color: red;
+	padding: 5% 0% 5% 0%;
+	margin: 5% 0% 5% 0%;
+}
+.clients img {
+	height: auto;
+	width: 150px;
+	border-radius: 100px;
+}
+.clients h5 {
+	font-size: 20px;
+	padding-top: 2%;
+	color: white;
+}
+.clients .client{
+	padding-right: 2%;
+	animation-name: coutMove;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+}
+@keyframes coutMove{
+	to:{transform: scaleX(2);};
+}
+.contact {
+	margin:10% 0% 10% 0%;
+	justify-content: center;
+}
+
+
+.contact h2{
+	margin-bottom: 2%;
+	
+}
+form {
+	padding-top: 10%;
+	border-left-width: 3px;
+	border-left-color:  blue;
+
+}
+
+select {
+	font-size: 15px;
+	text-align: center;
+	border-radius: 10px;
+	border-color: blue;
+	border-width: 3px;
+	display: block;
+	transition: 1s ;
+	margin: 2% 0% 2% 0%;
+	transform: scale(0.9);
+	height: 50px;
+	width: 300px;
+}
+input{
+	font-size: 15px;
+	text-align: center;
+	border-radius: 10px;
+	border-color: blue;
+	border-width: 3px;
+	display: block;
+	transition: 1s ;
+	margin: 2% 0% 2% 0%;
+	transform: scale(0.7);
+	height: 50px;
+	width: 300px;
+}
+input[name="message"]{
+	margin: 5% 0% 5% 0%;
+	height: 300px;
+
+
+}
+
+form button {
+	border:0px;
+	border-radius: 2px;
+	background-color: lightgreen;
+	padding: 1%; 
+	color: #fff;
+}
+
+input:hover {
+	transform: scaleX(2);
+	transform: scaleY(1.1);
+
+}
+
+footer {
+	justify-content: center;
+	background-color: red;
+	padding: 5% 0% 10% 0%;
+	margin-top: 5%;
+	color: #fff;
+}
+
+footer img {
+	padding-top: 30%;
+
+}
+
+
