@@ -17,11 +17,8 @@ h6 {
 	color: gray;
 	margin-top: 3%;
 }
-.menu {
-	padding-top: 2%;
-}
-
 ul {
+
 	align-items: right;
 	list-style-type: none;
 	justify-content: center;
@@ -29,29 +26,34 @@ ul {
 }
 
 li {
-	margin:3%;
-	border-radius: 5px;
+	margin:0% 3% 0% 3%;
+	
 	font-size: 25px;
 	transition: 2s;
 }
 
+.menu { 
+	margin-top: 5%;
+}
 
 .menu ul {
 	background-color: none;
 }
 .menu li {
+	background-color: #00000099;
+	padding: 2% 2% 2% 2%;
 	display: inline;
 }
 
 .menu li:hover{
 	display: inline;
 	background-color: lightblue;
-	color: black;
 }
 
 .menu a {
+
+	color: #fff;
 	font-size: 20px;
-	border-width:1px;
 
 }
 
@@ -59,7 +61,6 @@ li {
 	text-align: center;
 	float: left;
 	padding-top: 2%;
-	padding-bottom: 3%;
 }
 
 .banner {
@@ -72,26 +73,30 @@ li {
 }
 
 .banner p {
-    font-family: 'Gruppo', sans-serif;
-
-
+	font-family: 'Gruppo', sans-serif;
 	color: #fff;
-	font-size: 70px;
+	font-size: 40px;
 	padding-top: 10%;
 	padding-bottom: 30%;
+	text-align: center;
+
+}
+
+
+.banner span{
+	font-family: 'Gruppo', sans-serif;
+	color: #fff;
+	font-size: 90px;
+	padding-top: 10% 5% 30% 5%;
 	text-align: center;
 	justify-content: center;
 	text-decoration-style: dashed;
 	animation-name: anime;
 	animation-fill-mode: forwards;
-	animation-duration: 2s;
-
+	animation-duration: 10s;
 }
 
-@keyframes anime{
-	from{font-size: 20px}
-	to{font-size: 70px}
-}
+
 
 .service {
 	margin-top: 10%;
@@ -130,6 +135,20 @@ li {
 
 }
 
+.quote{
+	color: #fff;
+	background-color: black;
+	font-size: 20px;
+	padding: 3% 0% 3% 0%;
+}
+.quote q{
+	font-size: 50px;
+}
+
+.quote p{
+	text-align: right;
+	margin-right: 20%
+}
 
 
 .clients {
