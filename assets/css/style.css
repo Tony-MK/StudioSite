@@ -1,15 +1,23 @@
-@import url('/studio/assets/fonts/Londrina_Shadow/LondrinaShadow-Regular.ttf');
-@import url('/studio/assets/fonts/Gruppo/Gruppo-Regular.ttf');
+@font-face{
+	font-family: cool;
+	src: url('/studio/assets/fonts/Gruppo/Gruppo-Regular.ttf');
+}
 
+@font-face{
+	font-family: other;
+	src: url('/studio/assets/fonts/Londrina_Shadow/LondrinaShadow-Regular.ttf');
+}
 header {
 	color: #000;
 }
 body{
 	text-align: center;
+	font-family: cool;
 }
 
-h2{
-	text-align: center;
+h2 {
+	font-size: 100px;
+	font-family: other;
 	margin-bottom: 10%;
 }
 h6 {
@@ -27,7 +35,8 @@ ul {
 
 li {
 	margin:0% 3% 0% 3%;
-	
+	font-family: cool;
+
 	font-size: 25px;
 	transition: 2s;
 }
@@ -73,9 +82,10 @@ li {
 }
 
 .banner p {
-	font-family: 'Gruppo', sans-serif;
+	font-family: other;
+	font-weight: bold;
 	color: #fff;
-	font-size: 40px;
+	font-size: 120px;
 	padding-top: 10%;
 	padding-bottom: 30%;
 	text-align: center;
@@ -83,23 +93,8 @@ li {
 }
 
 
-.banner span{
-	font-family: 'Gruppo', sans-serif;
-	color: #fff;
-	font-size: 90px;
-	padding-top: 10% 5% 30% 5%;
-	text-align: center;
-	justify-content: center;
-	text-decoration-style: dashed;
-	animation-name: anime;
-	animation-fill-mode: forwards;
-	animation-duration: 10s;
-}
-
-
-
 .service {
-	margin-top: 10%;
+	padding-top: 5%;
 	text-align: center;
 	justify-content: center;
 	border-width: 30px;
@@ -118,8 +113,8 @@ li {
 	color: white;
 }
 @keyframes fader{
-	from:{margin-right:-300px}
-	to:{margin-right: 0px}
+	from:{right:-300px}
+	to:{right: 0px}
 }
 
 .services h2 {
@@ -141,8 +136,9 @@ li {
 	font-size: 20px;
 	padding: 3% 0% 3% 0%;
 }
-.quote q{
+.quote q {
 	font-size: 50px;
+	padding-bottom: 2%
 }
 
 .quote p{
@@ -182,8 +178,7 @@ li {
 
 
 .contact h2{
-	margin-bottom: 2%;
-	
+	margin-bottom: 10%;	
 }
 form {
 	padding-top: 10%;
